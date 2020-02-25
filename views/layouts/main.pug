@@ -1,0 +1,17 @@
+//- 탭이 부모와 자식을 표현 한다. 파이썬처럼
+//- 레이아웃 에는 다른페이지에서 내용을 넣을수 있는 공간을 둬야 한다. 여기서 는 main
+//- 다른 화면들의 코드가 main 태그 안에 들어갈수 있도록 태그안에 block 태그를 추가 속성으로 이름을 준다.
+//- partials 사용법  include(포함) 로사용  
+doctype html
+html
+    head
+        <script src="https://kit.fontawesome.com/bf6a326da4.js" crossorigin="anonymous"></script>
+        title #{pageTitle} | #{siteName}
+        link(rel="stylesheet", href="/static/styles.css")
+    body
+        include ../partials/header 
+            
+        main
+            block content
+        include ../partials/footer
+        script(src="/static/main.js")

@@ -1,0 +1,15 @@
+extends layouts/main
+
+block content
+    .form-container
+        form(action=routes.editProfile, method="post")
+            .file__upload
+                label(for="avatar") Avatar
+                input(type="file", name="avatar",id="avatar")
+            input(type="text", placeholder="Name",name="name")
+            input(type="email", placeholder="Email",name="email")
+            input(type="submit",value="Update Profile" )
+            a.form-container__link--ch(href=`/users${routes.changePassword}`) Chage Password
+
+
+    

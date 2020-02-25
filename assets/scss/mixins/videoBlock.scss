@@ -1,0 +1,22 @@
+.videoBlock {
+  display: flex;
+
+  a {
+    video {
+      margin-bottom: 10px;
+      max-width: 100%;
+    }
+    h4,
+    h6 {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 13px;
+    }
+  }
+}

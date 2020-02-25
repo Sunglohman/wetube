@@ -1,0 +1,45 @@
+.video-detail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .video__player {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    video {
+      max-width: 300px;
+      align-self: center;
+      margin-bottom: 50px;
+    }
+    .video__info {
+      a {
+        background-color: #0072ce;
+        color: $grey;
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 7px 12px;
+      }
+      h5 {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      p {
+        margin: 8px 0px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .video__views {
+        font-size: 15px;
+      }
+    }
+    .video__comments {
+      margin-top: 8px;
+      align-self: center;
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+}
